@@ -157,7 +157,32 @@ const Anatomy = () => {
       ctx.stroke();
     };
 
+    const upperJaw = () => {
+      ctx.beginPath();
+
+      ctx.bezierCurveTo(360, 1480, 390, 1430, 600, 1440);
+      ctx.bezierCurveTo(700, 1440, 800, 1430, 900, 1440);
+      ctx.bezierCurveTo(1000, 1440, 1100, 1430, 1200, 1560);
+      ctx.bezierCurveTo(1250, 1600, 1280, 1750, 1100, 1580);
+
+      ctx.bezierCurveTo(980, 1530, 950, 1520, 900, 1520);
+      ctx.bezierCurveTo(900, 1520, 850, 1530, 650, 1520);
+
+      ctx.bezierCurveTo(650, 1520, 510, 1600, 520, 1560);
+
+      ctx.bezierCurveTo(520, 1580, 500, 1600, 490, 1640);
+      ctx.bezierCurveTo(500, 1690, 420, 1530, 460, 1520);
+
+      ctx.bezierCurveTo(470, 1520, 410, 1500, 420, 1530);
+      ctx.bezierCurveTo(430, 1610, 470, 1640, 410, 1640);
+      ctx.bezierCurveTo(360, 1640, 370, 1640, 360, 1640);
+      ctx.bezierCurveTo(310, 1635, 380, 1660, 360, 1480);
+
+      ctx.stroke();
+    };
+
     lowerJaw();
+    upperJaw();
 
     border();
     grid();
