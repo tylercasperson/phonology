@@ -122,6 +122,43 @@ const Anatomy = () => {
       ctx.stroke();
     };
 
+    const lowerJaw = () => {
+      ctx.beginPath();
+
+      ctx.bezierCurveTo(1100, 2200, 1100, 2180, 1070, 2300);
+      ctx.bezierCurveTo(1060, 2400, 1100, 2400, 1150, 2500);
+      ctx.lineTo(940, 2500);
+
+      ctx.bezierCurveTo(940, 2500, 915, 2400, 915, 2400);
+      ctx.bezierCurveTo(900, 2300, 880, 2370, 860, 2200);
+      ctx.lineTo(840, 2100);
+      ctx.bezierCurveTo(830, 2060, 815, 2063, 800, 2065);
+      ctx.lineTo(700, 2080);
+      ctx.bezierCurveTo(450, 2150, 450, 2150, 402, 2100);
+      ctx.bezierCurveTo(410, 2105, 380, 2100, 390, 2000);
+      ctx.bezierCurveTo(390, 2000, 370, 1900, 375, 1900);
+      ctx.bezierCurveTo(370, 1900, 395, 1850, 310, 1800);
+
+      // Start of the lower lip
+      ctx.bezierCurveTo(315, 1770, 330, 1740, 350, 1740);
+      ctx.bezierCurveTo(430, 1760, 450, 1760, 460, 1800);
+
+      // gums
+      ctx.bezierCurveTo(460, 1800, 465, 1990, 500, 1830);
+      ctx.quadraticCurveTo(500, 1820, 515, 1820);
+
+      // lower teeth
+      ctx.bezierCurveTo(520, 1805, 515, 1820, 495, 1750);
+      ctx.bezierCurveTo(480, 1730, 580, 1790, 560, 1820);
+      ctx.bezierCurveTo(560, 1840, 550, 1780, 620, 1870);
+
+      // put tongue positions here
+
+      ctx.stroke();
+    };
+
+    lowerJaw();
+
     border();
     grid();
   }, []);
